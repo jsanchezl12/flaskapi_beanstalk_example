@@ -5,8 +5,7 @@ from flask_restful import Api
 from modelos.modelos import db
 from datetime import timedelta
 from vistas import VistaRoot, VistaHealthCheck, VistaObtenerOrden, VistaCrearOrden, VistaObtenerOrdenes, VistaActualizarStatus, VistaCancelarOrden
-#DATABASE_URI = 'sqlite:///restaurants.db'
-DATABASE_URI = 'postgresql+psycopg2://postgres:DreamTeam123*@database-1.cazbca9jsbii.us-east-1.rds.amazonaws.com/postgres'
+DATABASE_URI = 'postgresql+psycopg2://USER:PSW@HOST/DATABASE'
 
 application = Flask(__name__)
 application.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
